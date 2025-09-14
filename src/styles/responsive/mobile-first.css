@@ -1,0 +1,118 @@
+/* Mobile-First Responsive Design */
+/* This file replaces all !important rules with proper CSS specificity */
+
+/* Base styles (mobile first) */
+.section-wrapper {
+  padding: var(--space-4);
+}
+
+.section-title {
+  font-size: var(--text-2xl);
+  line-height: var(--leading-tight);
+}
+
+.hero-section__container {
+  padding: var(--space-4);
+}
+
+.hero-section h1 {
+  font-size: var(--text-3xl);
+  line-height: var(--leading-tight);
+}
+
+.hero-cta-main {
+  padding: var(--space-3) var(--space-5);
+  font-size: var(--text-base);
+}
+
+.bento-grid {
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.case-flip-cards {
+  grid-template-columns: 1fr;
+}
+
+.faq-chat__container {
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.chat-widget {
+  height: 400px;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  .section-wrapper {
+    padding: var(--space-6);
+  }
+  
+  .hero-section h1 {
+    font-size: var(--text-4xl);
+  }
+  
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-5);
+  }
+  
+  .case-flip-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .section-wrapper {
+    padding: var(--space-8);
+  }
+  
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+  }
+  
+  .case-flip-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large desktop styles */
+@media (min-width: 1440px) {
+  .section-wrapper {
+    padding: var(--space-12);
+  }
+  
+  .hero-section__container {
+    max-width: 1400px;
+  }
+  
+  .bento-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-8);
+  }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+  .section-wrapper {
+    padding: var(--space-2);
+  }
+  
+  .section-title {
+    font-size: var(--text-xl);
+    line-height: var(--leading-snug);
+  }
+  
+  .hero-section h1 {
+    font-size: var(--text-2xl);
+    line-height: var(--leading-snug);
+  }
+  
+  .hero-cta-main {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--text-sm);
+  }
+}

@@ -1,0 +1,25 @@
+/* Design System - Breakpoint Tokens */
+:root {
+  /* Breakpoint Values */
+  --breakpoint-mobile: 480px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-wide: 1440px;
+  --breakpoint-ultrawide: 1920px;
+
+  /* Container Max Widths */
+  --container-mobile: 100%;
+  --container-tablet: 768px;
+  --container-desktop: 1024px;
+  --container-wide: 1200px;
+  --container-ultrawide: 1400px;
+}
+
+/* Media Query Mixins (for reference) */
+/* 
+@media (min-width: 480px) { ... }   // Mobile landscape
+@media (min-width: 768px) { ... }   // Tablet
+@media (min-width: 1024px) { ... }  // Desktop
+@media (min-width: 1440px) { ... }  // Wide desktop
+@media (min-width: 1920px) { ... }  // Ultra wide
+*/

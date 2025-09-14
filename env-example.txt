@@ -1,0 +1,11 @@
+# Скопируйте этот файл в .env.local и заполните вашими данными
+
+# OpenRouter API Key - замените на ваш ключ
+OPENROUTER_API_KEY=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
+
+# Site URL for OpenRouter referrer
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+
+# Telegram Bot Configuration
+TELEGRAM_BOT_TOKEN=ваш_токен_бота_здесь
+TELEGRAM_ACCOUNT_ID=ваш_account_id_здесь
