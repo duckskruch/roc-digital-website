@@ -42,17 +42,24 @@ export const Header: React.FC = () => {
         </div>
       </div>
       <nav className="header-island__nav">
-        <a href="/presentation.pdf" download className="header-island__button">
+        <a 
+          href="https://docs.google.com/presentation/d/your-presentation-id/edit?usp=sharing" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="header-island__button"
+        >
           <Download size={16} />
           <span>AI Презентация</span>
         </a>
-        <button 
-          onClick={() => document.getElementById('assistant')?.scrollIntoView({ behavior: 'smooth' })} 
+        <a 
+          href="https://t.me/roc_digital" 
+          target="_blank" 
+          rel="noopener noreferrer"
           className="header-island__button"
         >
           <Send size={16} />
           <span>AI Ассистент</span>
-        </button>
+        </a>
       </nav>
     </motion.header>
   );
