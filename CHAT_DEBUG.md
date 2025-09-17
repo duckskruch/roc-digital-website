@@ -77,3 +77,4 @@ TELEGRAM_ACCOUNT_ID=ваш_account_id_здесь
 4. **Проверьте сетевые запросы:**
    Откройте DevTools → Network и посмотрите на запросы к `/api/chat`
 
+

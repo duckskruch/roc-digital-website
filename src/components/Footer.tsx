@@ -31,12 +31,20 @@ export const Footer = () => (
       </div>
       <div className="footer-column">
         <h4>Связаться</h4>
-        <p>info@roc.digital</p>
-        <p>@roc_digital</p>
+        <a href="https://t.me/roc_digital" target="_blank" rel="noopener noreferrer">Telegram: @roc_digital</a>
+        <a href="mailto:roc.digital@mail.ru">Email: roc.digital@mail.ru</a>
+        <a href="https://wa.me/79999999999" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       </div>
     </div>
     <div className="footer-bottom">
       <p>© 2025 ROC Digital. Все права защищены.</p>
+    </div>
+
+    {/* Mobile bottom contact bar */}
+    <div className="contact-bottom-bar" aria-label="Контакты: Telegram, WhatsApp, Email">
+      <a href="https://t.me/roc_digital" target="_blank" rel="noopener noreferrer" className="contact-bottom-bar__btn contact-bottom-bar__btn--tg">TG</a>
+      <a href="https://wa.me/79999999999" target="_blank" rel="noopener noreferrer" className="contact-bottom-bar__btn contact-bottom-bar__btn--wa">WA</a>
+      <a href="mailto:roc.digital@mail.ru" className="contact-bottom-bar__btn contact-bottom-bar__btn--mail">Mail</a>
     </div>
   </footer>
 );
